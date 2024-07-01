@@ -18,7 +18,7 @@
     <div class="col-lg-4 col-md-5">
       <div class="card bg-secondary shadow border-0">
         <div class="card-body px-lg-5 py-lg-5">
-          
+
           <form (ngSubmit)="onSubmit()" role="form">
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
@@ -28,7 +28,7 @@
                 <input class="form-control" placeholder="Nom" type="text" [(ngModel)]="newUser.userLastName" id="userLastName" name="userLastName" required>
               </div>
             </div>
-          
+
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
@@ -37,7 +37,7 @@
                 <input class="form-control" placeholder="Prenom" type="text" [(ngModel)]="newUser.userFirstName" id="userFirstName" name="userFirstName" required>
               </div>
             </div>
-          
+
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
@@ -46,7 +46,7 @@
                 <input class="form-control" placeholder="Username" type="text" [(ngModel)]="newUser.userName" id="userName" name="userName" required>
               </div>
             </div>
-          
+
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
@@ -54,8 +54,8 @@
                 </div>
                 <input class="form-control" placeholder="Email" type="email" [(ngModel)]="newUser.userEmail" id="userEmail" name="userEmail" required>
               </div>
-            </div>           
-          
+            </div>
+
             <div class="form-group">
               <div class="input-group input-group-alternative">
                 <div class="input-group-prepend">
@@ -64,7 +64,7 @@
                 <input class="form-control" placeholder="Mot de passe" type="password" [(ngModel)]="newUser.userPassword" id="userPassword" name="userPassword" required>
               </div>
             </div>
-          
+
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
@@ -73,7 +73,7 @@
                 <input class="form-control" placeholder="URL de l'image de profil" type="text" [(ngModel)]="newUser.userProfilPicture" id="userProfilPicture" name="userProfilPicture">
               </div>
             </div>
-          
+
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
@@ -82,7 +82,7 @@
                 <input class="form-control" placeholder="URL de l'image de couverture" type="text" [(ngModel)]="newUser.userCoverPicture" id="userCoverPicture" name="userCoverPicture">
               </div>
             </div>
-          
+
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
@@ -91,7 +91,7 @@
                 <input class="form-control" placeholder="ID du pays de l'utilisateur" type="text" [(ngModel)]="newUser.userIdCountry" id="userIdCountry" name="userIdCountry">
               </div>
             </div>
-          
+
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
@@ -100,7 +100,7 @@
                 <input class="form-control" placeholder="Type d'utilisateur (numéro)" type="number" [(ngModel)]="newUser.userType" id="userType" name="userType">
               </div>
             </div>
-          
+
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
@@ -109,7 +109,7 @@
                 <input class="form-control" placeholder="Nombre d'étoiles (numéro)" type="number" [(ngModel)]="newUser.userStars" id="userStars" name="userStars">
               </div>
             </div>
-          
+
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
@@ -118,37 +118,32 @@
                 <input class="form-control" placeholder="Date de création" type="date" [(ngModel)]="newUser.userCreatedAt" id="userCreatedAt" name="userCreatedAt">
               </div>
             </div>
-          
+
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                 </div>
-                <select class="form-control" [(ngModel)]="newUser.Person" id="Person" name="Person">
-                  <option value="Expert">Expert</option>
-                  <option value="Organisateure">Organisateure</option>
-                  <option value="Entrepreneure">Entrepreneure</option>
-                </select>
               </div>
             </div>
-          
+
             <div class="form-group">
               <div class="custom-control custom-checkbox mb-3">
                 <input class="custom-control-input" id="userIsApproved" type="checkbox" [(ngModel)]="newUser.userIsApproved" name="userIsApproved">
                 <label class="custom-control-label" for="userIsApproved">Approuvé</label>
               </div>
             </div>
-          
+
             <div class="text-center">
               <button type="submit" class="btn btn-primary mt-4">Créer Mon Compte</button>
             </div>
           </form>
-          
+
         </div>
       </div>
 
       <div class="row mt-3 d-flex justify-content-between">
-        
+
           <p class="text text-light"><small>Vous avez un compte?</small></p>
           <a (click)="navigateToLogIn()" class="text-success font-weight-400">Se Connecter</a>
       </div>

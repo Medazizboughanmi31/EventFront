@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
   }
-  
+
 
   login(loginForm: NgForm){
     this.userService.login(loginForm.value).subscribe(
@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit, OnDestroy {
         this.userAuthService.setUserEmail(response.user.userEmail);
         this.userAuthService.setRole(response.user.role);
         this.userAuthService.setToken(response.jwtToken);
-        this.router.navigate(['/projet']);
+        this.router.navigate(['/event']);
       },
       (error) => {
         console.log(error);

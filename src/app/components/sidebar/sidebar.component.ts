@@ -39,7 +39,7 @@ export class SidebarComponent implements OnInit {
     return this.userAuthService.isExpert();
   }
 
-  
+
   ngOnInit() {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
     this.router.events.subscribe((event) => {
